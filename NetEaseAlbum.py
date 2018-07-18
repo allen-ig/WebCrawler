@@ -21,8 +21,6 @@ class GetPic():
 
     def letsgo(self):
         driver = webdriver.PhantomJS()
-        # cookie = {'name': 'allen_ig@163.com', 'value': 'lycssb960312---'}
-        # driver.add_cookie(cookie)
         driver.get(self.url)
         driver.switch_to.frame('g_iframe')
         html = driver.page_source
